@@ -1,9 +1,253 @@
----
-layout: index
-section-type: index
-sitemap:
-  priority: 1.0
----
-<!--
-If you want to have a static message in your intro layout, disable the dynamic-typing in the _config.yml and write here your text
--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Akshay Gupta</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="shortcut icon" href="assets/coding.png" type="image/png">
+    <style type="text/css">
+		html{
+			scroll-behavior: smooth;
+		}
+		.para{
+			width: 100%;
+			height: 500px;
+		}
+		.parallax-window {
+    		min-height: 400px;
+    		background: transparent;
+    		margin: 50px 0 10px 0; 
+		}
+	</style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="menu-wrap">
+    	<input type="checkbox" class="toggler" id="myfield" />
+    	<div class="hamburger"><div></div></div>
+    	<div class="menu">
+			<div>
+				<div>
+				<ul id="myhref">
+					<li><a href="#aboutme">About Me</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#hobbies">Hobbies</a></li>
+					<li><a href="#contact">Contact Me</a></li>
+					<li><a href="./assets/Akshay_Gupta_CV.pdf">CV</a></li>
+				</ul>
+				</div>
+			</div>
+    	</div>
+    </div>
+    <header class="showcase">
+        <div class="container showcase-inner">
+			<h3 class="display-4" id="typed"></h3>
+			<p>Seems you have reached my homepage. Welcome!!!<br>Feel free to explore.</p>
+			<br>  
+		</div>
+	</header>
+	
+    <div class="container">
+		<div id="aboutme" class="para">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/aboutme.jpg">
+				<h1 class="parallax-head" style="color: #"></h1>
+			</div>
+        </div>
+		<div class="jumbotron" data-aos="zoom-in-up">
+                <img src="assets/author.jpg" class="rounded-circle float-right" width="170" height="170" style="margin: 10px;">
+                <p>Hello! Myself Akshay Gupta, and this is my personal webpage. I am currently Sophomore at the <a href="https://www.cse.iitk.ac.in/" target="_blank">Department of Computer Science &amp; Engineering</a> at <a href="http://www.iitk.ac.in/" target="_blank">IIT Kanpur</a>.<br> 
+                    My current interests is <em>Deep Learning</em>, love teaching computers i.e. Machine learning specially Computer Vision and Natural language processing and bit interested in Competitive Coding.
+                    I love solving Sudoku like a <em>pro</em> , solved about 200 during April-July 2020(Just a stat 😁) .<br>
+                    I am from Bisauli, a small town in UP most probably you doesn't hear it's name left it .
+                    I am always interested in solving problems and building things that will impact people's life and be useful to our community. I would love to collaborate. Just ping me. 
+                </p>
+        </div>
+        <div id="projects" class="para">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="assets/proj.jpg">
+                <h1 class="parallax-head" style="color: rgb(0,0,0); font-size:70px; font-family: 'Dancing Script', cursive;">Projects</h1>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-12 col-md-4">
+   				<div class="card mb-4" data-aos="fade-right" >
+  					<img class="card-img-top" src="assets/dl.jpg" alt="Card image cap">
+  					<div class="card-body">
+    					<h5 class="card-title">Model Zoo</h5>
+    					<p class="card-text">Implented Deep Learning Model Including -<br>Image-Inpainting,<br>WGAN,BILSTM-CRF.</p>
+    					<a href="https://github.com/pclubiitk/model-zoo" class="btn btn-primary" target="_blank"><img src="assets/github.png" width="25" height="25"> View On Github</a>
+  					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="card mb-4" data-aos="fade-down">
+  					<img class="card-img-top" src="assets/sudoku.jpg" alt="Card image cap">
+  					<div class="card-body">
+    					<h5 class="card-title">Sudoku Solver</h5>
+    					<p class="card-text">A Real Time Sudoku Solver using Solving Any Sudoku algorithm, Digit Recognition Model, OpenCv.</p>
+    					<a href="https://github.com/akshay-gupta123/Real-Time-Sudoku-Solver" class="btn btn-primary" target="_blank"><img src="assets/github.png" width="25" height="25"> View On Github</a>
+  					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="card mb-4" data-aos="fade-left" >
+  					<img class="card-img-top" src="assets/game.jpg" alt="Card image cap">
+  					<div class="card-body">
+    					<h5 class="card-title">AI-T3</h5>
+    					<p class="card-text">Tic Tac Toe game with both Human vs Human and Human vs Computer Option. Min Max Algorithm for Computer side.</p>
+    					<a href="https://github.com/akshay-gupta123/AI-T3" class="btn btn-primary" target="_blank"><img src="assets/github.png" width="25" height="25"> View On Github</a>
+  					</div>
+				</div>
+			</div>
+		</div>
+        <div class="row ">
+        	<div class="col-sm-12 col-md-4 ">
+   				<div class="card mb-4" data-aos="fade-right" >
+  					<img class="card-img-top" src="assets/popcorn.jpg" alt="Card image cap" height="180px">
+  					<div class="card-body">
+    					<h5 class="card-title">PopcornTime</h5>
+    					<p class="card-text">An Infotainment app using MERN stack providing Information about Latest and Popular Movies.</p>
+    				</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 ">
+				<div class="card mb-4" data-aos="fade-up">
+  					<img class="card-img-top" src="assets/fountain.jpg" alt="Card image cap">
+  					<div class="card-body">
+    					<h5 class="card-title">Kalam</h5>
+    					<p class="card-text">A Personal Blogging app using django with RSS feed option and PostgreSQL for trigram similarity.</p>
+    				</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 ">
+				<div class="card mb-4" data-aos="fade-left">
+  					<img class="card-img-top" src="assets/poetry.webp" alt="Card image cap">
+  					<div class="card-body">
+    					<h5 class="card-title">Poetry(In Progress)</h5>
+    					<p class="card-text">It is combination of two deep learning model. One from text to Poetry generation and other from Image.</p>
+    				</div>
+				</div>
+			</div>
+		</div>
+		<div id="skills" class="para">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="assets/home.jpg">
+				<h1 class="parallax-head" style="color: rgb(0,0,0); font-size:70px; font-family: 'Dancing Script', cursive;">Skills</h1>
+			</div>
+		</div>
+		<div class="jumbotron" data-aos="zoom-in-up">
+            <p><em> “Tell me and I forget, teach me and I may remember, involve me and I learn.  ”</em><sub> ― Benjamin Franklin</sub></p>
+			<ul>
+				<li><em>Programming Languages</em> - C++, C, Python, Javascript</li>
+				<li><em>Deep Learning Framework</em> - Tensorflow, Keras, Pytorch</li>
+				<li><em>Data Science Libraries</em> - Numpy, Pandas, Pyplot, Spacy, Nltk, OpenCv</li> 
+				<li><em>Web</em> -  Express, Nodejs, REST API, Django, HTML5, Bootstrap, React</li>
+				<li><em>Utilities</em> - Git, Bash, LibreCad</li>
+				<li><em>Databases</em> - MySql, PostgreSQL, MongoDB</li>
+			</ul>
+        </div>
+		<div id="hobbies" class="para">
+          <div class="parallax-window" data-parallax="scroll" data-image-src="assets/hobby.jpg" data-natural-width="150px">
+              <h1 class="parallax-head" style="color: rgb(0,0,0); font-size:70px;font-family: 'Dancing Script', cursive;">Hobbies</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+                <div class="card mb-4" data-aos="fade-down-right">
+                    <div class="card-body text-center" >
+                        <img src="assets/prog.jpeg" width="100%"><br><br>
+                        <p class="card-text">I am a tech Enthusiast and like doing coding a lot specialy related to Deep learning. Always ready for collabing in any technical projects. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card mb-4"  data-aos="fade-down-left">
+                    <div class="card-body text-center">
+                        <img src="assets/cric.jpg" width="100%"><br><br>
+                        <p class="card-text">I love watching Cricket and am a big fan of <em>India</em>. You can engage me in hours of conversation on Cricket and I won't be tired.</p>
+                    </div>
+                </div>
+            </div>
+			<div class="col-sm-12 col-md-6">
+                <div class="card mb-4" data-aos="fade-up-right">
+                    <div class="card-body text-center">
+                        <img src="assets/song.jpg" width="100%" ><br><br>
+                        <p class="card-text">I like to listen to music and my taste varies a lot, ranging from soul-soothing hindi music to high energy rock.</p>
+                    </div>
+                </div>
+            </div>
+           <div class="col-sm-12 col-md-6">
+                <div class="card mb-4" data-aos="fade-up-left">
+                    <div class="card-body text-center">
+                        <img src="assets/film.jpg" width="100%"><br><br>
+                        <p class="card-text">Watching movies is an amazing activity to relax, watched a lot, sci-fic and mystery genre. Some suggestions would be:- Inception, Interstellar, Lucy, Gravity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	<footer class="page-footer font-small indigo" id="contact">
+		<div class="container">
+			<div class="row text-center d-flex justify-content-center pt-5 mb-3">	
+				<div class="col-md-2 mb-3">
+					<h6 class="text-uppercase font-weight-bold">
+						<a href="mailto: akshay@iitk.ac.in" target="_blank"><img src="assets/email.png" width="60" height="60" class="icon"></a>
+					</h6>
+				</div>
+				<div class="col-md-2 mb-3">
+					<h6 class="text-uppercase font-weight-bold">
+						<a href="https://github.com/akshay-gupta123" target="_blank"><img src="assets/github.png" width="50" height="50" class="icon"></a>
+					</h6>
+				</div>
+				<div class="col-md-2 mb-3">
+					<h6 class="text-uppercase font-weight-bold">
+						<a href="https://www.linkedin.com/in/akshay18082001/" target="_blank"><img src="assets/linkedin.png" width="45" height="45" class="icon"></a>
+					</h6>
+				</div>
+				<div class="col-md-2 mb-3">
+					<h6 class="text-uppercase font-weight-bold">
+						<a href="https://www.facebook.com/gupta.akshay123/" target="_blank"><img src="assets/facebook.png" width="45" height="45" class="icon"></a>
+					</h6>
+				</div>
+			</div>
+			<hr class="rgba-white-light" style="margin: 0 15%;">
+
+			<div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+				<div class="col-md-8 col-12 mt-5">
+					<h4 style="line-height: 1.8; text-size: 15px;">You can find me at A-205 Hall 13.<br> Feel free to ping me anytime.</h4>
+				</div>
+			</div>
+			<hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+		</div>
+		<div class="footer-copyright text-center py-3">
+			<p> Akshay Gupta &middot 2020</p>
+		</div>
+	</footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        var myhref = document.getElementById("myhref");
+        var myfield = document.getElementById("myfield");
+        myhref.addEventListener("click",function(){
+            myfield.checked = false;
+        });
+    </script>
+    <script>
+        AOS.init({
+        duration: 1000
+        });
+    </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script> 
+    <script src="js/script.js"></script>
+    <script src="js/parallax.min.js"></script>  
+</body>
+</html>

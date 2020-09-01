@@ -1,5 +1,3 @@
-Homepage using Jekyll with support for tagged blogs etc.
+# gakshay.github.io
 
-!!! Warning
-
-Pagionation might not work locally without jekyll-paginate so we careful.
+Personal Website!! 
